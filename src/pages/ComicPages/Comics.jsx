@@ -27,7 +27,7 @@ const Comics = () => {
 
       try {
         const response = await axios.get(
-          `https://site--marvel-back--f5rrxgmqcwc8.code.run/comics?title=${title}&skip=${skipValue}&limit=${limit}`
+          `https://marvel-api.lehebel.com/comics?title=${title}&skip=${skipValue}&limit=${limit}`
         );
         console.log("comics data=>>>", response.data);
         setData(response.data);

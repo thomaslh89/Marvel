@@ -15,7 +15,7 @@ const ComicsDetails = () => {
       try {
         if (comicID) {
           const response = await axios.get(
-            `https://site--marvel-back--f5rrxgmqcwc8.code.run/comicsdetail/${comicID}`
+            `https://marvel-api.lehebel.com/comicsdetail/${comicID}`
           );
           setData(response.data);
         }

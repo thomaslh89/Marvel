@@ -15,7 +15,7 @@ const CharactersDetail = () => {
       setIsLoading(true);
       try {
         const response = await axios.get(
-          `https://site--marvel-back--f5rrxgmqcwc8.code.run/characterdetail/${characterID}`
+          `https://marvel-api.lehebel.com/characterdetail/${characterID}`
         );
         setData(response.data);
       } catch (error) {

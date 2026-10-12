@@ -28,7 +28,7 @@ const Home = () => {
 
       try {
         const response = await axios.get(
-          `https://site--marvel-back--f5rrxgmqcwc8.code.run/characters?name=${name}&skip=${skipValue}&limit=${limit}`
+          `https://marvel-api.lehebel.com/characters?name=${name}&skip=${skipValue}&limit=${limit}`
         );
         console.log(response.data);
         setData(response.data);
